@@ -1,7 +1,6 @@
 ﻿using DutchTreat.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DutchTreat
@@ -31,6 +30,7 @@ namespace DutchTreat
             app.UseExceptionHandler("/error");
          }
          
+         //use default files changes the path from url to add default page links index.html, index.htm etc
          //app.UseDefaultFiles();
          app.UseStaticFiles();
 
